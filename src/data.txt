@@ -1,0 +1,306 @@
+argument: Value passed to a function.
+assignment: Obliterates an object’s current value and replaces that value by a new one.
+block: Sequence of zero or more statements enclosed in curly braces.
+buffer: A region of storage used to hold data. IO facilities often store input (or output) in a buffer and read or write the buffer independently from actions in the program. Output buffers can be explicitly flushed to force the buffer to be written. By default, reading cin flushes cout; cout is also flushed when the program ends normally.
+built-in type: Type, such as int, defined by the language.
+cerr: ostream object tied to the standard error, which often writes to the same device as the standard output. By default, writes to cerr are not buffered. Usually used for error messages or other output that is not part of the normal logic of the program.
+character: string literal Another term for string literal.
+cin: istream object used to read from the standard input.
+class: Facility for defining our own data structures together with associated operations. The class is one of the most fundamental features in C++. Library types, such as istream and ostream, are classes.
+class type: A type defined by a class. The name of the type is the class name.
+clog: ostream object tied to the standard error. By default, writes to clog are buffered. Usually used to report information about program execution to a log file.
+comments: Program text that is ignored by the compiler. C++ has two kinds of comments: single-line and paired. Single-line comments start with a //. Everything from the // to the end of the line is a comment. Paired comments begin with a /* and include all text up to the next */.
+condition: An expression that is evaluated as true or false. A value of zero is false; any other value yields true.
+cout: ostream object used to write to the standard output. Ordinarily used to write the output of a program.
+curly brace: Curly braces delimit blocks. An open curly ({) starts a block; a close curly (}) ends one.
+data structure: A logical grouping of data and operations on that data.
+edit-compile-debug: The process of getting a program to execute properly.
+end-of-file: System-specific marker that indicates that there is no more input in a file.
+expression: The smallest unit of computation. An expression consists of one or more operands and usually one or more operators. Expressions are evaluated to produce a result. For example, assuming i and j are ints, then i + j is an expression and yields the sum of the two int values.
+for statement: Iteration statement that provides iterative execution. Often used to repeat a calculation a fixed number of times.
+function: Named unit of computation.
+function body: Block that defines the actions performed by a function.
+function name: Name by which a function is known and can be called.
+header: Mechanism whereby the definitions of a class or other names are made available to multiple programs. A program uses a header through a #include directive.
+if statement: Conditional execution based on the value of a specified condition. If the condition is true, the if body is executed. If not, the else body is executed if there is one.
+initialize: Give an object a value at the same time that it is created.
+iostream: Header that provides the library types for stream-oriented input and output.
+istream: Library type providing stream-oriented input.
+library type: Type, such as istream, defined by the standard library.
+main: Function called by the operating system to execute a C++ program. Each program must have one and only one function named main.
+manipulator: Object, such as std::endl, that when read or written “manipulates” the stream itself.
+member function: Operation defined by a class. Member functions ordinarily are called to operate on a specific object.
+method: Synonym for member function.
+namespace: Mechanism for putting names defined by a library into a single place. Namespaces help avoid inadvertent name clashes. The names defined by the C++ library are in the namespace std.
+ostream: Library type providing stream-oriented output.
+parameter list: Part of the definition of a function. Possibly empty list that specifies what arguments can be used to call the function.
+return type: Type of the value returned by a function.
+source file: Term used to describe a file that contains a C++ program.
+standard error: Output stream used for error reporting. Ordinarily, the standard output and the standard error are tied to the window in which the program is executed.
+standard input: Input stream usually associated with the window in which the program executes.
+standard library: Collection of types and functions that every C++ compiler must support. The library provides the types that support IO. C++ programmers tend to talk about “the library,” meaning the entire standard library. They also tend to refer to particular parts of the library by referring to a library type, such as the “iostream library,” meaning the part of the standard library that defines the IO classes.
+standard output: Output stream usually associated with the window in which the program executes.
+statement: A part of a program that specifies an action to take place when the program is executed. An expression followed by a semicolon is a statement; other kinds of statements include blocks and if, for, and while statements, all of which contain other statements within themselves.
+std: Name of the namespace used by the standard library. std::cout indicates that we’re using the name cout defined in the std namespace.
+string literal: Sequence of zero or more characters enclosed in double quotes ("a string literal").
+uninitialized variable: Variable that is not given an initial value. Variables of class type for which no initial value is specified are initialized as specified by the class definition. Variables of built-in type defined inside a function are uninitialized unless explicitly initialized. It is an error to try to use the value of an uninitialized variable. Uninitialized variables are a rich source of bugs.
+variable: A named object.
+while statement: Iteration statement that provides iterative execution so long as a specified condition is true. The body is executed zero or more times, depending on the truth value of the condition.
+() operator: Call operator. A pair of parentheses “()” following a function name. The operator causes a function to be invoked. Arguments to the function may be passed inside the parentheses.
+++ operator: Increment operator. Adds 1 to the operand; ++i is equivalent to i = i + 1.
++= operator: Compound assignment operator that adds the right-hand operand to the left and stores the result in the left-hand operand; a += b is equivalent to a = a + b.
+. operator: Dot operator. Left-hand operand must be an object of class type and the right-hand operand must be the name of a member of that object. The operator yields the named member of the given object.
+:: operator: Scope operator. Among other uses, the scope operator is used to access names in a namespace. For example, std::cout denotes the name cout from the namespace std.
+= operator: Assigns the value of the right-hand operand to the object denoted by the left-hand operand.
+-- operator: Decrement operator. Subtracts 1 from the operand; --i is equivalent to i = i - 1.
+<< operator: Output operator. Writes the right-hand operand to the output stream indicated by the left-hand operand: cout << "hi" writes hi to the standard output. Output operations can be chained together: cout << "hi" << "bye" writes hibye.
+>> operator: Input operator. Reads from the input stream specified by the lefthand operand into the right-hand operand: cin >> i reads the next value on the standard input into i. Input operations can be chained together: cin >> i >> j reads first into i and then into j.
+# include: Directive that makes code in a header available to a program.
+== operator: The equality operator. Tests whether the left-hand operand is equal to the right-hand operand.
+!= operator: The inequality operator. Tests whether the left-hand operand is not equal to the right-hand operand.
+<= operator: The less-than-or-equal operator. Tests whether the left-hand operand is less than or equal to the right-hand operand.
+< operator: The less-than operator. Tests whether the left-hand operand is less than the right-hand operand.
+>= operator: Greater-than-or-equal operator. Tests whether the left-hand operand is greater than or equal to the right-hand operand.
+> operator: Greater-than operator. Tests whether the left-hand operand is greater than the right-hand operand.
+address: Number by which a byte in memory can be found. 
+alias declaration: Defines a synonym for another type: using name = type declares name as a synonym for the type type.
+arithmetic types: Built-in types representing boolean values, characters, integers, and floating-point numbers.
+array: Data structure that holds a collection of unnamed objects that are accessed by an index. Section 3.5 covers arrays in detail.
+auto: Type specifier that deduces the type of a variable from its initializer. 
+base type: Type specifier, possibly qualified by const, that precedes the declarators in a declaration. The base type provides the common type on which the declarators in a declaration can build.
+bind: Associating a name with a given entity so that uses of the name are uses of the underlying entity. For example, a reference is a name that is bound to an object.
+byte: Smallest addressable unit of memory. On most machines a byte is 8 bits.
+class member: Part of a class.
+compound type: A type that is defined in terms of another type.
+const: Type qualifier used to define objects that may not be changed. const objects must be initialized, because there is no way to give them a value after they are defined.
+const pointer: Pointer that is const.
+const reference: Colloquial synonym for reference to const.
+constant expression: Expression that can be evaluated at compile time.
+constexpr: Variable that represents a constant expression. § 6.5.2 (p. 239) covers constexpr functions.
+conversion: Process whereby a value of one type is transformed into a value of another type. The language defines conversions among the built-in types.
+data member: Data elements that constitute an object. Every object of a given class has its own copies of the class’ data members. Data members may be initialized when declared inside the class.
+declaration: Asserts the existence of a variable, function, or type defined elsewhere. Names may not be used until they are defined or declared.
+declarator: The part of a declaration that includes the name being defined and an optional type modifier.
+decltype: Type specifier that deduces the type of a variable or an expression. 
+default initialization: How objects are initialized when no explicit initializer is given. How class type objects are initialized is controlled by the class. Objects of built-in type defined at global scope are initialized to 0; those defined at local scope are uninitialized and have undefined values.
+definition: Allocates storage for a variable of a specified type and optionally initializes the variable. Names may not be used until they are defined or declared.
+escape sequence: Alternative mechanism for representing characters, particularly for those without printable representations. An escape sequence is a backslash followed by a character, three or fewer octal digits, or an x followed by a hexadecimal number.
+global scope: The scope that is outside all other scopes.
+header guard: Preprocessor variable used to prevent a header from being included more than once in a single file.
+identifier: Sequence of characters that make up a name. Identifiers are casesensitive. 
+in-class initializer: Initializer provided as part of the declaration of a class data member. In-class initializers must follow an = symbol or be enclosed inside curly braces. 
+in scope: Name that is visible from the current scope.
+initialized: A variable given an initial value when it is defined. Variables usually should be initialized.
+inner scope: Scope that is nested inside another scope.
+integral types: See arithmetic type.
+list initialization: Form of initialization that uses curly braces to enclose one or more initializers.
+literal: A value such as a number, a character, or a string of characters. The value cannot be changed. Literal characters are enclosed in single quotes, literal strings in double quotes.
+local scope: Colloquial synonym for block scope.
+low-level const: A const that is not top-level. Such consts are integral to the type and are never ignored.
+member: Part of a class.
+nonprintable character: A character with no visible representation, such as a control character, a backspace, newline, and so on.
+null pointer: Pointer whose value is 0. A null pointer is valid but does not point to any object.
+nullptr: Literal constant that denotes the null pointer.
+object: A region of memory that has a type. A variable is an object that has a name.
+outer scope: Scope that encloses another scope.
+pointer: An object that can hold the address of an object, the address one past the end of an object, or zero.
+pointer to const: Pointer that can hold the address of a const object. A pointer to const may not be used to change the value of the object to which it points.
+preprocessor: Program that runs as part of compilation of a C++ program.
+preprocessor variable: Variable managed by the preprocessor. The preprocessor replaces each preprocessor variable by its value before our program is compiled.
+reference: An alias for another object.
+reference to const: A reference that may not change the value of the object to which it refers. A reference to const may be bound to a const object, a nonconst object, or the result of an expression.
+scope: The portion of a program in which names have meaning. C++ has several levels of scope: global—names defined outside any other scope class—names defined inside a class namespace—names defined inside a namespace block—names defined inside a block Scopes nest. Once a name is declared, it is accessible until the end of the scope in which it was declared.
+separate compilation: Ability to split a program into multiple separate source files.
+signed: Integer type that holds negative or positive values, including zero.
+string: Library type representing variable-length sequences of characters.
+struct: Keyword used to define a class.
+temporary: Unnamed object created by the compiler while evaluating an expression. A temporary exists until the end of the largest expression that encloses the expression for which it was created.
+top-level const: The const that specifies that an object may not be changed.
+type alias: A name that is a synonym for another type. Defined through either a typedef or an alias declaration.
+type checking: Term used to describe the process by which the compiler verifies that the way objects of a given type are used is consistent with the definition of that type.
+type specifier: The name of a type.
+typedef: Defines an alias for another type. When typedef appears in the base type of a declaration, the names defined in the declaration are type names.
+undefined: Usage for which the language does not specify a meaning. Knowingly or unknowingly relying on undefined behavior is a great source of hard-to-track runtime errors, security problems, and portability problems.
+uninitialized: Variable defined without an initial value. In general, trying to access the value of an uninitialized variable results in undefined behavior.
+unsigned: Integer type that holds only values greater than or equal to zero.
+variable: A named object or reference. In C++, variables must be declared before they are used.
+void*: Pointer type that can point to any nonconst type. Such pointers may not be dereferenced.
+void type: Special-purpose type that has no operations and no value. It is not possible to define a variable of type void.
+word: The natural unit of integer computation on a given machine. Usually a word is large enough to hold an address. On a 32-bit machine a word is typically 4 bytes.
+& operator: Address-of operator. Yields the address of the object to which it is applied.
+* operator: Dereference operator. Dereferencing a pointer returns the object to which the pointer points. Assigning to the result of a dereference assigns a new value to the underlying object.
+# define: Preprocessor directive that defines a preprocessor variable.
+# endif: Preprocessor directive that ends an #ifdef or #ifndef region.
+# ifdef: Preprocessor directive that determines whether a given variable is defined.
+# ifndef: Preprocessor directive that determines whether a given variable is not defined.
+begin: Member of string and vector that returns an iterator to the first element. Also, free-standing library function that takes an array and returns a pointer to the first element in the array.
+buffer overflow: Serious programming bug that results when we use an index that is out-of-range for a container, such as a string, vector, or an array.
+C-style strings: Null-terminated character array. String literals are C-style strings. C-style strings are inherently error-prone.
+class template: A blueprint from which specific clas types can be created. To use a class template, we must specify additional information. For example, to define a vector, we specify the element type: vector<int> holds ints.
+compiler extension: Feature that is added to the language by a particular compiler. Programs that rely on compiler extensions cannot be moved easily to other compilers.
+container: A type whose objects hold a collection of objects of a given type. vector is a container type.
+copy initialization: Form of initialization that uses an =. The newly created object is a copy of the given initializer.
+difference_type: A signed integral type defined by vector and string that can hold the distance between any two iterators.
+direct initialization: Form of initialization that does not include an =.
+empty: Member of string and vector. Returns bool, which is true if size is zero, false otherwise.
+end: Member of string and vector that returns an off-the-end iterator. Also, freestanding library function that takes an array and returns a pointer one past the last element in the array.
+getline: Function defined in the string header that takes an istream and a string. The function reads the stream up to the next newline, storing what it read into the string, and returns the istream. The newline is read and discarded.
+index: Value used in the subscript operator to denote the element to retrieve from a string, vector, or array.
+instantiation: Compiler process that generates a specific template class or function.
+iterator: A type used to access and navigate among the elements of a container.
+iterator arithmetic: Operations on vector or string iterators: Adding or subtracting an integral value and an iterator yields an iterator that many elements ahead of or behind the original iterator. Subtracting one iterator from another yields the distance between them. Iterators must refer to elements in, or off-the-end of the same container.
+null-terminated string: String whose last character is followed by the null character ('\0').
+off-the-end iterator: The iterator returned by end that refers to a nonexistent element one past the end of a container.
+pointer arithmetic: The arithmetic operations that can be applied to pointers. Pointers to arrays support the same operations as iterator arithmetic.
+ptrdiff_t: Machine-dependent signed integral type defined in the cstddef header that is large enough to hold the difference between two pointers into the largest possible array.
+push_back: Member of vector. Appends elements to the back of a vector.
+range: for Control statement that iterates through a specified collection of values.
+size: Member of string and vector. Returns the number of characters or elements, respectively. Returns a value of the size_type for the type.
+size_t: Machine-dependent unsigned integral type defined in the cstddef header that is large enough to hold the size of the largest possible array.
+size_type: Name of types defined by the string and vector classes that are capable of containing the size of any string or vector, respectively. Library classes that define size_type define it as an unsigned type.
+string: Library type that represents a sequence of characters.
+using declarations: Make a name from a namespace accessible directly. using namespace::name; makes name accessible without the namespace:: prefix.
+value initialization: Initialization in which built-in types are initialized to zero and class types are initialized by the class’s default constructor. Objects of a class type can be value initialized only if the class has a default constructor. Used to initialize a container’s elements when a size, but not an element initializer, is specified. Elements are initialized as a copy of this compiler-generated value.
+vector: Library type that holds a collection of elements of a specified type.
+++ operator: The iterator types and pointers define the increment operator to “add one” by moving the iterator to refer to the next element.
+[ ] operator: Subscript operator. obj[i] yields the element at position i from the container object obj. Indices count from zero—the first element is element 0 and the last is the element indexed by obj.size() - 1. Subscript returns an object. If p is a pointer and n an integer, p[n] is a synonym for *(p+n).
+-> operator: Arrow operator. Combines the operations of dereference and dot operators: a->b is a synonym for (*a).b.
+<< operator: The string library type defines an output operator. The string operator prints the characters in a string.
+>> operator: The string library type defines an input operator. The string operator reads whitespace-delimited chunks of characters, storing what is read into the right-hand (string) operand.
+! operator: Logical NOT operator. Returns the inverse of the bool value of its operand. Result is true if operand is false and vice versa.
+&& operator: Logical AND operator. Result is true if both operands are true. The right-hand operand is evaluated only if the left-hand operand is true.
+|| operator: Logical OR operator. Yields true if either operand is true. The righthand operand is evaluated only if the left-hand operand is false.
+arithmetic conversion: A conversion from one arithmetic type to another. In the context of the binary arithmetic operators, arithmetic conversions usually attempt to preserve precision by converting a smaller type to a larger type (e.g., integral types are converted to floating point).
+associativity: Determines how operators with the same precedence are grouped. Operators can be either right associative (operators are grouped from right to left) or left associative (operators are grouped from left to right). 
+binary operators: Operators that take two operands.
+cast: An explicit conversion.
+compound expression: An expression involving more than one operator.
+const_cast: A cast that converts a low-level const object to the corresponding nonconst type or vice versa.
+conversion: Process whereby a value of one type is transformed into a value of another type. The language defines conversions among the built-in types. Conversions to and from class types are also possible.
+dynamic_cast: Used in combination with inheritance and run-time type identification. See § 19.2 (p. 825).
+expression: The lowest level of computation in a C++ program. Expressions generally apply an operator to one or more operands. Each expression yields a result. Expressions can be used as operands, so we can write compound expressions requiring the evaluation of multiple operators.
+implicit conversion: A conversion that is automatically generated by the compiler. Given an expression that needs a particular type but has an operand of a differing type, the compiler will automatically convert the operand to the desired type if an appropriate conversion exists. 
+integral promotions: Conversions that take a smaller integral type to its most closely related larger integral type. Operands of small integral types (e.g., short, char, etc.) are always promoted, even in contexts where such conversions might not seem to be required.
+lvalue: An expression that yields an object or function. A nonconst lvalue that denotes an object may be the left-hand operand of assignment.
+operands: Values on which an expression operates. Each operator has one or more operands associated with it.
+operator: Symbol that determines what action an expression performs. The language defines a set of operators and what those operators mean when applied to values of built-in type. The language also defines the precedence and associativity of each operator and specifies how many operands each operator takes. Operators may be overloaded and applied to values of class type.
+order of evaluation: Order, if any, in which the operands to an operator are evaluated. In most cases, the compiler is free to evaluate operands in any order. However, the operands are always evaluated before the operator itself is evaluated. Only the &&, ||, ?:, and comma operators specify the order in which their operands are evaluated.
+overloaded operator: Version of an operator that is defined for use with a class type. We’ll see in Chapter 14 how to define overloaded versions of operators.
+precedence: Defines the order in which different operators in a compound expression are grouped. Operators with higher precedence are grouped more tightly than operators with lower precedence.
+promoted: See integral promotions.
+reinterpret_cast: Interprets the contents of the operand as a different type. Inherently machine dependent and dangerous.
+result: Value or object obtained by evaluating an expression.
+rvalue: Expression that yields a value but not the associated location, if any, of that value.
+short-circuit evaluation: Term used to describe how the logical AND and logical OR operators execute. If the first operand to these operators is sufficient to determine the overall result, evaluation stops. We are guaranteed that the second operand is not evaluated.
+sizeof: Operator that returns the size, in bytes, to store an object of a given type name or of the type of a given expression.
+static_cast: An explicit request for a well-defined type conversion. Often used to override an implicit conversion that the compiler would otherwise perform.
+unary operators: Operators that take a single operand.
+, operator: Comma operator. Binary operator that is evaluated left to right. The result of a comma expression is the value of the right-hand operand. The result is an lvalue if and only if that operand is an lvalue.
+?: operator: Conditional operator. Provides an if-then-else expression of the form cond ? expr1 : expr2; If the condition cond is true, then expr1 is evaluated. Otherwise, expr2 is evaluated. The type expr1 and expr2 must be the same type or be convertible to a common type. Only one of expr1 or expr2 is evaluated.
+&& operator: Logical AND operator. Result is true if both operands are true. The right-hand operand is evaluated only if the left-hand operand is true.
+& operator: Bitwise AND operator. Generates a new integral value in which each bit position is 1 if both operands have a 1 in that position; otherwise the bit is 0.
+^ operator: Bitwise exclusive or operator. Generates a new integral value in which each bit position is 1 if either but not both operands contain a 1 in that bit position; otherwise, the bit is 0.
+|| operator: Logical OR operator. Yields true if either operand is true. The righthand operand is evaluated only if the left-hand operand is false.
+| operator: Bitwise OR operator. Generates a new integral value in which each bit position is 1 if either operand has a 1 in that position; otherwise the bit is 0.
+++ operator: The increment operator. The increment operator has two forms, prefix and postfix. Prefix increment yields an lvalue. It adds 1 to the operand and returns the changed value of the operand. Postfix increment yields an rvalue. It adds 1 to the operand and returns a copy of the original, unchanged value of the operand. Note: Iterators have ++ even if they do not have the + operator.
+-- operator: The decrement operator has two forms, prefix and postfix. Prefix decrement yields an lvalue. It subtracts 1 from the operand and returns the changed value of the operand. Postfix decrement yields an rvalue. It subtracts 1 from the operand and returns a copy of the original, unchanged value of the operand. Note: Iterators have -- even if they do not have the -.
+<< operator: The left-shift operator. Shifts bits in a (possibly promoted) copy of the value of the left-hand operand to the left. Shifts as many bits as indicated by the right-hand operand. The right-hand operand must be zero or positive and strictly less than the number of bits in the result. Left-hand operand should be unsigned; if the left-hand operand is signed, it is undefined if a shift causes a different bit to shift into the sign bit.
+>> operator: The right-shift operator. Like the left-shift operator except that bits are shifted to the right. If the left-hand operand is signed, it is implementation defined whether bits shifted into the result are 0 or a copy of the sign bit.
+~ operator: Bitwise NOT operator. Generates a new integral value in which each bit is an inverted copy of the corresponding bit in the (possibly promoted) operand.
+! operator: Logical NOT operator. Returns the inverse of the bool value of its operand. Result is true if operand is false and vice versa.
+block: Sequence of zero or more statements enclosed in curly braces. A block is a statement, so it can appear anywhere a statement is expected.
+break statement: Terminates the nearest enclosing loop or switch statement. Execution transfers to the first statement following the terminated loop or switch.
+case label: Constant expression (§ 2.4.4, p. 65) that follows the keyword case in a switch statement. No two case labels in the same switch statement may have the same value.
+catch clause: The catch keyword, an exception declaration in parentheses, and a block of statements. The code inside a catch clause does whatever is necessary to handle an exception of the type defined in its exception declaration.
+compound statement: Synonym for block.
+continue statement: Terminates the current iteration of the nearest enclosing loop. Execution transfers to the loop condition in a while or do, to the next iteration in a range for, or to the expression in the header of a traditional for loop.
+dangling else: Colloquial term used to refer to the problem of how to process nested if statements in which there are more ifs than elses. In C++, an else is always paired with the closest preceding unmatched if. Note that curly braces can be used to effectively hide an inner if so that the programmer can control which if a given else should match.
+default label: Case label that matches any otherwise unmatched value computed in the switch expression.
+do while statement: Like a while, except that the condition is tested at the end of the loop, not the beginning. The statement inside the do is executed at least once.
+exception classes: Set of classes defined by the standard library to be used to represent errors. Table 5.1 (p. 197) lists the general-purpose exception classes.
+exception declaration: The declaration in a catch clause. This declaration specifies the type of exceptions the catch can handle.
+exception handler: Code that deals with an exception raised in another part of the program. Synonym for catch clause.
+exception safe: Term used to describe programs that behave correctly when exceptions are thrown.
+expression statement: An expression followed by a semicolon. An expression statement causes the expression to be evaluated.
+flow of control: Execution path through a program.
+for statement: Iteration statement that provides iterative execution. Ordinarily used to step through a container or to repeat a calculation a given number of times.
+goto statement: Statement that causes an unconditional transfer of control to a specified labeled statement elsewhere in the same function. gotos obfuscate the flow of control within a program and should be avoided.
+if else statement: Conditional execution of code following the if or the else, depending on the truth value of the condition.
+if statement: Conditional execution based on the value of the specified condition. If the condition is true, then the if body is executed. If not, control flows to the statement following the if.
+labeled statement: Statement preceded by a label. A label is an identifier followed by a colon. Label identifiers are independent of other uses of the same identifier.
+null statement: An empty statement. Indicated by a single semicolon.
+raise: Often used as a synonym for throw. C++ programmers speak of “throwing” or “raising” an exception interchangeably.
+range for statement: Statement that iterates through a sequence.
+switch statement: A conditional statement that starts by evaluating the expression that follows the switch keyword. Control passes to the labeled statement with a case label that matches the value of the expression. If there is no matching label, execution either continues at the default label, if there is one, or falls out of the switch if there is no default label.
+terminate: Library function that is called if an exception is not caught. terminate aborts the program.
+throw expression: Expression that interrupts the current execution path. Each throw throws an object and transfers control to the nearest enclosing catch clause that can handle the type of exception that is thrown.
+try block: Block enclosed by the keyword try and one or more catch clauses. If the code inside a try block raises an exception and one of the catch clauses matches the type of the exception, then the exception is handled by that catch. Otherwise, the exception is handled by an enclosing try block or the program terminates.
+while statement: Iteration statement that executes its target statement as long as a specified condition is true. The statement is executed zero or more times, depending on the truth value of the condition.
+ambiguous call: Compile-time error that results during function matching when two or more functions provide an equally good match for a call. 
+arguments: Values supplied in a function call that are used to initialize the function’s parameters.
+assert: Preprocessor macro that takes a single expression, which it uses as a condition. When the preprocessor variable NDEBUG is not defined, assert evaluates the condition and, if the condition is false, writes a message and terminates the program.
+automatic objects: Objects that exist only during the execution of a function. They are created when control passes through their definition and are destroyed at the end of the block in which they are defined.
+best match: Function selected from a set of overloaded functions for a call. If a best match exists, the selected function is a better match than all the other viable candidates for at least one argument in the call and is no worse on the rest of the arguments.
+call by reference: See pass by reference.
+call by value: See pass by value.
+candidate functions: Set of functions that are considered when resolving a function call. The candidate functions are all the functions with the name used in the call for which a declaration is in scope at the time of the call.
+constexpr: Function that may return a constant expression. A constexpr function is implicitly inline.
+default argument: Value specified to be used when an argument is omitted in a call to the function.
+executable file: File, which the operating system executes, that contains code corresponding to our program.
+function: Callable unit of computation.
+function body: Block that defines the actions of a function.
+function matching: Compiler process by which a call to an overloaded function is resolved. Arguments used in the call are compared to the parameter list of each overloaded function.
+function prototype: Function declaration, consisting of the name, return type, and parameter types of a function. To call a function, its prototype must have been declared before the point of call.
+hidden names: Names declared inside a scope hide previously declared entities with the same names declared outside that scope.
+initializer_list: Library class that represents a comma-separated list of objects of a single type enclosed inside curly braces.
+inline function: Request to the compiler to expand a function at the point of call, if possible. Inline functions avoid the normal function-calling overhead.
+link: Compilation step in which multiple object files are put together to form an executable program.
+local static objects: Local objects whose value persists across calls to the function. Local static objects that are created and initialized before control reaches their use and are destroyed when the program ends.
+local variables: Variables defined inside a block.
+no match: Compile-time error that results during function matching when there is no function with parameters that match the arguments in a given call.
+object code: Format into which the compiler transforms our source code.
+object file: File holding object code generated by the compiler from a given source file. An executable file is generated from one or more object files after the files are linked together.
+object lifetime: Every object has an associated lifetime. Nonstatic objects that are defined inside a block exist from when their definition is encountered until the end of the block in which they are defined. Global objects are created during program startup. Local static objects are created before the first time execution passes through the object’s definition. Global objects and local static objects are destroyed when the main function ends.
+overload resolution: See function matching.
+overloaded function: Function that has the same name as at least one other function. Overloaded functions must differ in the number or type of their parameters.
+parameters: Local variables declared inside the function parameter list. Parameters are initialized by the arguments provided in each function call.
+pass by reference: Description of how arguments are passed to parameters of reference type. Reference parameters work the same way as any other use of references; the parameter is bound to its corresponding argument.
+pass by value: How arguments are passed to parameters of a nonreference type. A nonreference parameter is a copy of the value of its corresponding argument.
+preprocessor macro: Preprocessor facility that behaves like an inline function. Aside from assert, modern C++ programs make very little use of preprocessor macros.
+recursion loop: Description of a recursive function that omits a stopping condition and which calls itself until exhasuting the program stack.
+recursive function: Function that calls itself directly or indirectly.
+return type: Part of a function declaration that specifies the type of the value that the function returns.
+separate compilation: Ability to split a program into multiple separate source files.
+trailing return type: Return type specified after the parameter list.
+viable functions: Subset of the candidate functions that could match a given call. Viable functions have the same number of parameters as arguments to the call, and each argument type can be converted to the corresponding parameter type.
+() operator: Call operator. Executes a function. The name of a function or a function pointer precedes the parentheses, which enclose a (possibly empty) comma-separated list of arguments.
+abstract data type: Data structure that encapsulates (hides) its implementation.
+access specifier: Keywords public and private. Used to define whether members are accessible to users of the class or only to friends and members of the class. Specifiers may appear multiple times within a class. Each specifier sets the access of the following members up to the next specifier.
+aggregate class: Class with only public data members that has no in-class initializers or constructors. Members of an aggregate can be initialized by a braceenclosed list of initializers.
+class: C++ mechanism for defining our own abstract data types. Classes may have data, function, or type members. A class defines a new type and a new scope.
+class declaration: The keyword class (or struct) followed by the class name followed by a semicolon. If a class is declared but not defined, it is an incomplete type.
+class keyword: Keyword used to define a class; by default members are private.
+class scope: Each class defines a scope. Class scopes are more complicated than other scopes—member functions defined within the class body may use names that appear even after the definition.
+const member function: A member function that may not change an object’s ordinary (i.e., neither static nor mutable) data members. The this pointer in a const member is a pointer to const. A member function may be overloaded based on whether the function is const.
+constructor: A special member function used to initialize objects. Each constructor should give each data member a well-defined initial value.
+constructor initializer list: Specifies initial values of the data members of a class. The members are initialized to the values specified in the initializer list before the body of the constructor executes. Class members that are not initialized in the initializer list are default initialized.
+converting constructor: A nonexplicit constructor that can be called with a single argument. Such constructors implicitly convert from the argument’s type to the class type.
+data abstraction: Programming technique that focuses on the interface to a type. Data abstraction lets programmers ignore the details of how a type is represented and think instead about the operations that the type can perform. Data abstraction is fundamental to both object-oriented and generic programming.
+default constructor: Constructor that is used if no initializer is supplied. 
+delegating constructor: Constructor with a constructor-initializer list that has one entry that designates another constructor of the same class to do the initialization.
+encapsulation: Separation of implementation from interface; encapsulation hides the implementation details of a type. In C++, encapsulation is enforced by putting the implementation in the private part of a class.
+explicit constructor: Constructor that can be called with a single argument but cannot be used in an implicit conversion. A constructor is made explicit by prepending the keyword explicit to its declaration.
+forward declaration: Declaration of an as yet undefined name. Most often used to refer to the declaration of a class that appears prior to the definition of that class. See incomplete type.
+friend: Mechanism by which a class grants access to its nonpublic members. Friends have the same access rights as members. Both classes and functions may be named as friends.
+implementation: The (usually private) members of a class that define the data and any operations that are not intended for use by code that uses the type.
+incomplete type: Type that is declared but not defined. It is not possible to use an incomplete type to define a variable or class member. It is legal to define references or pointers to incomplete types.
+interface: The (public) operations supported by a type. Ordinarily, the interface does not include data members.
+member function: Class member that is a function. Ordinary member functions are bound to an object of the class type through the implicit this pointer. static member functions are not bound to an object and have no this pointer. Member functions may be overloaded; when they are, the implicit this pointer participates in the function matching.
+mutable data member: Data member that is never const, even when it is a member of a const object. A mutable member can be changed inside a const function.
+name lookup: Process by which the use of a name is matched to its declaration.
+private members: Members defined after a private access specifier; accessible only to the friends and other class members. Data members and utility functions used by the class that are not part of the type’s interface are usually declared private.
+public members: Members defined after a public access specifier; accessible to any user of the class. Ordinarily, only the functions that define the interface to the class should be defined in the public sections.
+struct keyword: Keyword used to define a class; by default members are public.
+synthesized default constructor: The default constructor created (synthesized) by the compiler for classes that do not explicitly define any constructors. This constructor initializes the data members from their in-class initializers, if present; otherwise it default initializes the data members.
+this pointer: Implicit value passed as an extra argument to every nonstatic member function. The this pointer points to the object on which the function is invoked.
+= default: Syntax used after the parameter list of the declaration of the default constructor inside a class to signal to the compiler that it should generate the constructor, even if the class has other constructors.
